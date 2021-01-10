@@ -1,0 +1,2 @@
+module stage_2 {
+}
