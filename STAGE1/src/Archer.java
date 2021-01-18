@@ -10,4 +10,3 @@ public class Archer extends Human {
 		Attack(Power);
 	}
 }
-
