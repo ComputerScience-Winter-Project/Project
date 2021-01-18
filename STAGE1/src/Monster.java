@@ -11,4 +11,6 @@ public class Monster {
 		Attack(Power);
 		
 	}
+	//몬스터 스킬은 좀 더 나중에 구현
+	
 }
