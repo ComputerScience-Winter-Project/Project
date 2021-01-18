@@ -15,7 +15,7 @@ public class Human {
 	}
 	public void BasicAttack(int Job) {
 		//직업별로 데미지계산해서 punch에 대입시킴
-		int Punch;
+		int Punch = 0;
 		Attack(Punch);
 		}
 	
