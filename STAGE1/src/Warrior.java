@@ -5,9 +5,9 @@ public class Warrior extends Human {
 	//전사이기 떄문에 체력이 많음
 	//부모클래스---체력이랑 마나랑 레벨 정도만 구현해줌--부모클래스를 만들어야함 
 	//마나소모량 넣어줘야함
-	public  void SwordDancing(Monster Name,int Strength) //Strength==레벨증가할때마다만 증가
+	public  void SwordDancing(Monster Name,int Level) //Strength==레벨증가할때마다만 증가
 	{
-		int Power = Strength*200;
+		int Power = Level* 800 ;
 		
 	     AttackH(Name,Power);
 		//Attack 함수는 적을 공격하는 함수로 밑에는 gui로 공격씬을 넣을 예정
@@ -16,8 +16,8 @@ public class Warrior extends Human {
 			
 		}
 		
-	public void  Chopping(Monster Name, int Strength){//찍기공격
-		int Power = Strength*120;
+	public void  Chopping(Monster Name, int Level){//찍기공격
+		int Power = Level*600;
 		
 		AttackH(Name, Power);
 		
