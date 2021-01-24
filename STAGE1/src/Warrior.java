@@ -4,7 +4,7 @@ public class Warrior extends Human {
 	//기본공격 메소드는 메인클래스
 	//전사이기 떄문에 체력이 많음
 	//부모클래스---체력이랑 마나랑 레벨 정도만 구현해줌--부모클래스를 만들어야함 
-	
+	//마나소모량 넣어줘야함
 	public  void SwordDancing(Monster Name,int Strength) //Strength==레벨증가할때마다만 증가
 	{
 		int Power = Strength*200;
