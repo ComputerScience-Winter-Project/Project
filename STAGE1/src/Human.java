@@ -8,10 +8,12 @@ public class Human {
 	int Level=0;
 	int Job;//0은 전사, 1은 궁수, 2는 법사
 
-	public void Attack(int Damage) {
+	public void Attack( String Name,int Damage) {
+	
+		
 		//입력받은 데미지만큼 상대방의 체력을 깎음
 		//몬스터의 체력을 깎아야하기 때문에 가장 중요함
-		
+		//대상을 입력받고 대상의 체력을 전역변수로 설정해서 그 체력이 닳게 구현 static 사용
 	}
 	public void BasicAttack(int Job) {
 		//직업별로 데미지계산해서 punch에 대입시킴
