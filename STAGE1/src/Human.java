@@ -22,7 +22,7 @@ public class Human {
 		case  1 : //전사의 경우
 			Punch = 400 + Level *100;
 		case 2 : //궁수의 경우
-			Punch = 600 + Level *150;
+			Punch = 400 + Level *150;
 		case 3 :
 			Punch = 200 + Level *100;
 		}
