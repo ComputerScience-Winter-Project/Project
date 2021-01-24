@@ -1,12 +1,12 @@
 
 public class Archer extends Human {
 	int Power;
-	public void fireArrow(int Strength){
+	public void fireArrow(Monster Name,int Strength){
 		Power = Strength * 250;
-		Attack(Power);
+		AttackH(Name,Power);
 	}
-	public void arrowRain(int Strength){
+	public void arrowRain(Monster Name, int Strength){
 		Power = Strength * 300;
-		Attack(Power);
+		AttackH(Name,Power);
 	}
 }
