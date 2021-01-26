@@ -6,36 +6,39 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		//Á÷¾÷À» ¼±ÅÃÇÒ ¶§ ½ºÀ§Ä¡¹®À¸·Î Á÷¾÷ÀÌ »ı¼ºµÇ°Ô²û ÇÏ¸é µÉ µí
-		//¸ŞÀÎÀ» ±æ°Ô ´Ã¸®´Â°Ô ¸Â´Â°É±î??????????
-		//switch¹®À¸·Î Á÷¾÷º°·Î ÇÒ´çµÇ´Â °ªµéÀ» »ı¼ºÇØÁÖ¾î¾ßÇÔ
-		//ÀÌ ¾Õ¿¡ ÀÌÁ¦ ½ºÅä¸® ÁøÇàÀ» ÇÏ´Â ºÎºĞµéÀ» ¸¸µé¾îÁÜ --ÀÌ°É ´Ù¸¥ ÇÏ³ªÀÇ Å¬·¡½º·Î ¸¸µé¾î¼­ Á» ´õ mainÀÇ ±æÀÌ¸¦ ÁÙÀÏ±î??
+		//ì§ì—…ì„ ì„ íƒí•  ë•Œ ìŠ¤ìœ„ì¹˜ë¬¸ìœ¼ë¡œ ì§ì—…ì´ ìƒì„±ë˜ê²Œë” í•˜ë©´ ë  ë“¯
+		//ë©”ì¸ì„ ê¸¸ê²Œ ëŠ˜ë¦¬ëŠ”ê²Œ ë§ëŠ”ê±¸ê¹Œ??????????
+		//switchë¬¸ìœ¼ë¡œ ì§ì—…ë³„ë¡œ í• ë‹¹ë˜ëŠ” ê°’ë“¤ì„ ìƒì„±í•´ì£¼ì–´ì•¼í•¨
+		//ì´ ì•ì— ì´ì œ ìŠ¤í† ë¦¬ ì§„í–‰ì„ í•˜ëŠ” ë¶€ë¶„ë“¤ì„ ë§Œë“¤ì–´ì¤Œ --ì´ê±¸ ë‹¤ë¥¸ í•˜ë‚˜ì˜ í´ë˜ìŠ¤ë¡œ ë§Œë“¤ì–´ì„œ ì¢€ ë” mainì˜ ê¸¸ì´ë¥¼ ì¤„ì¼ê¹Œ??
+		Human hero = new Human();
 		int job;
 		Scanner scan = new Scanner(System.in);
-		System.out.print("Á÷¾÷ ¼±ÅÃ: ");
+		System.out.print("ì§ì—…ì„ ì„ íƒí•´ ì£¼ì„¸ìš”: ");
 		job = scan.nextInt();
 		switch(job) {
 		case 0:
-			Warrior wa = new Warrior();
-			wa.Health = 200;
-			wa.Mana = 150;
-			wa.Level = 1;
-			wa.Job = 0;
+			hero = new Warrior();
+			hero.Health = 200;
+			hero.Mana = 150;
+			hero.Level = 1;
+			hero.Job = 0;
 			break;
 		case 1:
-			Archer ar = new Archer();
-			ar.Health = 150;
-			ar.Mana = 100;
-			ar.Level = 1;
-			ar.Job = 1;
+			hero = new Archer();
+			hero.Health = 150;
+			hero.Mana = 100;
+			hero.Level = 1;
+			hero.Job = 1;
 			break;
 		case 2:
-			Wizard wi = new Wizard();
-			wi.Health = 100;
-			wi.Mana = 250;
-			wi.Level = 1;
-			wi.Job = 2;
+			hero = new Wizard();
+			hero.Health = 100;
+			hero.Mana = 250;
+			hero.Level = 1;
+			hero.Job = 2;
 			break;
 		}
+		
 	}
 }
+
