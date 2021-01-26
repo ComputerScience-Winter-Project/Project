@@ -6,14 +6,10 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		//직업을 선택할 때 스위치문으로 직업이 생성되게끔 하면 될 듯
-		//메인을 길게 늘리는게 맞는걸까??????????
-		//switch문으로 직업별로 할당되는 값들을 생성해주어야함
-		//이 앞에 이제 스토리 진행을 하는 부분들을 만들어줌 --이걸 다른 하나의 클래스로 만들어서 좀 더 main의 길이를 줄일까??
 		Human hero = new Human();
 		int job;
 		Scanner scan = new Scanner(System.in);
-		System.out.print("직업을 선택해 주세요: ");
+		System.out.print("���� ����: ");
 		job = scan.nextInt();
 		switch(job) {
 		case 0:
@@ -39,6 +35,9 @@ public class Main {
 			break;
 		}
 		
+		Monster monster = new Monster();
+		monster.AttackM(hero, 50);
+		System.out.println("����� ���� ü��: " + hero.Health);
 	}
 }
 

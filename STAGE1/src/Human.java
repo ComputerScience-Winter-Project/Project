@@ -7,6 +7,8 @@ public class Human {
 	int Mana;
 	int Level=0; //일단은 몬스터 한 마리당 1씩 증가로 생각 중!
 	int Job;//0은 전사, 1은 궁수, 2는 법사
+	int Growth_Health;
+	int Growth_Mana;
 
 	public void AttackH(Monster Name,int Damage) {
 		Name.Health -= Damage;
