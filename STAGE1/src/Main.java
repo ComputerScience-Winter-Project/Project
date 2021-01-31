@@ -9,7 +9,7 @@ public class Main {
 		Human hero = new Human();
 		int job;
 		Scanner scan = new Scanner(System.in);
-		System.out.print("Á÷¾÷ ¼±ÅÃ: ");
+		System.out.print("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½: ");
 		job = scan.nextInt();
 		switch(job) {
 		case 0:
@@ -37,7 +37,9 @@ public class Main {
 		
 		Monster monster = new Monster();
 		monster.AttackM(hero, 50);
-		System.out.println("È÷¾î·Î ³²Àº Ã¼·Â: " + hero.Health);
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Ã¼ï¿½ï¿½: " + hero.Health);
+		Moving mv = new Moving();
+		mv.MyFrame();
 	}
 }
 
