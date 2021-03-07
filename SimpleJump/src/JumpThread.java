@@ -5,11 +5,10 @@ public class JumpThread extends Thread {
     boolean jumping=false;
     
     int jumpingy[]=new int[]{0, -15, -10,-6,-6,0,6,6,10,15}; 
-    
     int jumpIdx;
     
     JumpListener jumpListener;
-    
+  
     public JumpThread(JumpListener jumpListener) {
     	super();
     	this.jumpIdx=1;
