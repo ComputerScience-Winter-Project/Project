@@ -14,16 +14,17 @@ public class Map {
 
 	private String Map[] = new String[40]; 
 	
-	private Image grass, slime;
+	private Image grass, slime,tree;
 	
 	public Map() {
 		
 		ImageIcon img = new ImageIcon("image/grass2.png");
 		grass = img.getImage();
-		ImageIcon img2 = new ImageIcon("image/slime.png");
+		ImageIcon img2 = new ImageIcon("image/slime2.png");
 		
 		slime = img2.getImage();
-		
+		ImageIcon img3 = new ImageIcon("image/fortree.png");
+		tree = img3.getImage();
 		openFile();
 		readFile();
 		closeFile();
@@ -37,7 +38,9 @@ public class Map {
 	public Image getSlime() {
 		return slime;
 	}
-	
+	public Image getTree() {
+		return tree;
+	}
 	public String getMap(int x, int y) {
 		String index = Map[y].substring(x, x + 1);
 		return index;

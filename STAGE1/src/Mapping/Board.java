@@ -46,6 +46,8 @@ public class Board extends JPanel implements ActionListener {
 				if(m.getMap(x,y).equals("s")) {
 					g.drawImage(m.getSlime(), x*32 , y*32,null);					}
 				
+				if(m.getMap(x,y).equals("t")) {
+					g.drawImage(m.getTree(), x*32 , y*32,null);					}
 				
 			}
 			
